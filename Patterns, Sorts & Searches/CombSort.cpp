@@ -15,3 +15,15 @@ void combSort(int arr[], int n){
     }
   }
 }
+
+int main(){
+    int arr[7] = {4, 2, 1, 8, 9, 6, 7};
+    int n = 7;
+    bubbleSort(arr, n);
+    cout << "{";
+    for(int i = 0; i < n; i++){
+        cout << arr[i] << " ";
+    }
+    cout << "}" << endl;
+    return 0;
+}
