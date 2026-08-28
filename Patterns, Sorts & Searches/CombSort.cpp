@@ -7,7 +7,7 @@ void combSort(int arr[], int n){
   while(gap != 1 || swapped == true){
     gap = (gap/shrink < 1.0) ? 1 : gap/shrink;
     swapped = false;
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < n - gap; i++){
       if(arr[i] > arr[i + gap]){
         swap(arr[i], arr[i + gap];
         swapped = true;
