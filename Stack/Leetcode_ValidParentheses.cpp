@@ -37,6 +37,9 @@ class Stack{
         if(isEmpty()){return '\0';}
         return arr[top-1];
     }
+    ~Stack(){
+        delete[] arr;
+    }
 };
 bool validParenthesis(string str){
     int n = str.length();
