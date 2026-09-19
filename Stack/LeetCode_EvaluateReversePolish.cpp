@@ -35,6 +35,9 @@ class Stack{
         if(isEmpty()){return '\0';}
         return arr[top-1];
     }
+    ~Stack(){
+        delete[] arr;
+    }
 };
 
 int ERP(string tokens[], int size){
