@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 // Function to perform Insertion Sort on dynamic array
